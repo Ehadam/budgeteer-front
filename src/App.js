@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from './generic_components/Card';
+import Header from './components/Header';
+import TransactionList from './components/transactions/TransactionList';
+import './App.scss';
+import './support/generalStyles.scss';
+import DatePicker from './components/date_picker/DatePicker';
 
-function App() {
+export default function App() {
+  const transactions = {
+    '2021-09-11': [{
+      date: '2021-09-11',
+      payee: 'Purely Wholesome Farm',
+      amount: 50,
+      isExpense: true,
+    }],
+    '2021-09-10': [{
+      date: '2021-09-10',
+      payee: 'PatientKeeper',
+      amount: 3600.32,
+      isExpense: false,
+    }]
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div className="mainBody">
+        <DatePicker />
+        <Card />
+        <div className="transactionList">
+          <TransactionList transactionsMap={transactions} />
+        </div>
+      </div>
+
+      <div id="dialog-root"></div>
+    </>
   );
 }
-
-export default App;

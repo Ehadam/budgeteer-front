@@ -1,0 +1,16 @@
+@import "../colorScheme.scss";
+
+.card {
+	box-shadow: 0px 6px 12px;
+	height: 100%;
+
+	.tabBar {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 9px 0px 15px 9px;
+
+		.active {
+			border-bottom: thick solid $secondary-color;
+		}
+	}
+}

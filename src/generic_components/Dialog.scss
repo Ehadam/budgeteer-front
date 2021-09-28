@@ -1,0 +1,29 @@
+.curtain {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.dialog {
+		background-color: #fff;
+		border-radius: 5px;
+		width: 500px;
+		height: 500px;
+
+		.dialogHeader {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0px 21px;
+
+			.closeButton {
+				cursor: pointer;
+			}
+		}
+	}
+}

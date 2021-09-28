@@ -1,0 +1,11 @@
+@import "../colorScheme.scss";
+
+.mainHeader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $primary-color;
+	color: white;
+	height: 5vh;
+	font-size: larger;
+}

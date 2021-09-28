@@ -1,0 +1,12 @@
+.transactionRowItem {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	.income {
+		color: green;
+	}
+
+	.expense {
+		color: red;
+	}
+}

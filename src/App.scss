@@ -1,0 +1,8 @@
+.mainBody {
+	display: grid;
+	gap: 15px;
+	grid-template-columns: 20% auto;
+	grid-template-rows: 5% auto;
+	height: 91vh;
+	padding: 15px;
+}

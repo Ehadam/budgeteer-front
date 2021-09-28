@@ -1,0 +1,14 @@
+@import "../../colorScheme.scss";
+
+.addTransaction {
+	color: white;
+	font-size: x-large;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border-radius: 50px;
+	background-color: $secondary-color;
+	padding: 10px 20px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
